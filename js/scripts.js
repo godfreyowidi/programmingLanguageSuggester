@@ -11,11 +11,13 @@ $(document).ready(function() {
     const Q4 = toString($("#q4").val());
     const Q5 = toString($("#q5").val());
 
-  if (Q1, Q2, Q3, Q4, Q5 == csharp) {
-    $("#Csharp").show();
-  } else if () {
-    $("#java").show();
-  } else {
-    $("#python").show();
-  }
-}) 
+    if (Q1, Q2, Q3, Q4, Q5 === csharp) {
+      $("#Csharp").show();
+    } else if (Q1, Q2, Q3, Q4, Q5 === java) {
+      $("#java").show();
+    } else if (Q1, Q2, Q3, Q4, Q5 === python) {
+      $("#python").show();
+    }
+    $("#output").text(result);
+  }) 
+})
