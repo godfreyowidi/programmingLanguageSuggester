@@ -1,6 +1,10 @@
-const csharp = ["different places, different problems", "i wouldn't be here", "round can't fall", "ride it", "probably fir"];
-const java = ["research", "wouldn't be talking to you", "square wouldn't fit", "take to the zoo", "probably cedar"];
-const python = ["practice coding", "why sarcasm", "are they circular?", "take to madagascar", "probably oak"];
+function createQuestion() {
+  $("p").foreach(
+    (immediateQuestion, questionIndex) => {
+      const answers = [];
+    }
+  )
+}
 
 $(document).ready(function() {
   $("form#container").submit(function(event) {
