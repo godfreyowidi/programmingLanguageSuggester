@@ -10,12 +10,14 @@ $(document).ready(function() {
     const Q3 = toString($("#q3").val());
     const Q4 = toString($("#q4").val());
     const Q5 = toString($("#q5").val());
+    
+    const result = [Q1, Q2, Q3, Q4, Q5];
 
-    if (Q1, Q2, Q3, Q4, Q5 === csharp) {
+    if (result === csharp) {
       $("#Csharp").show();
-    } else if (Q1, Q2, Q3, Q4, Q5 === java) {
+    } else if (result === java) {
       $("#java").show();
-    } else if (Q1, Q2, Q3, Q4, Q5 === python) {
+    } else if (result === python) {
       $("#python").show();
     }
     $("#output").text(result);
