@@ -2,6 +2,7 @@ function createQuestion() {
   $("p").foreach(
     (immediateQuestion, questionIndex) => {
       const answers = [];
+      for (answerLetter in immediateQuestion.answers)
     }
   )
 }
