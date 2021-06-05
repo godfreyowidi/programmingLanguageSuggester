@@ -14,107 +14,49 @@
   <div class="container">
     <h1>Programming Language Suggester</h1>
     <br />
-    <p>How would you solve problems if you were from Mars?</p>
-    <div class="radio">
-      <label>
-        <input type="radio" name="answers" id="csharp-answer">
-        <label for="csharp-answer">Different place, different problems</label>
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="answers" id="java-answer">
-        <label for="java-answer">Research</label>
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="answers" id="python-answer">
-        <label for="python-answer">Practice coding</label>
-      </label>
-    </div>
-    <br />
-    <p>What do you think of garden gnomes?</p>
-    <div class="radio">
-      <label>
-        <input type="radio" name="answers" id="csharp-answer">
-        <label for="csharp-answer">I wouldn't be here</label>
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="answers" id="java-answer">
-        <label for="java-answer">I wouldn't be talking to you</label>
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="answers" id="python-answer">
-        <label for="python-answer">Why Sarcasm?</label>
-      </label>
-    </div>
-    <br />
-    <p>Why are manholes round?</p>
-    <div class="radio">
-      <label>
-        <input type="radio" name="answers" id="csharp-answer">
-        <label for="csharp-answer">Round can't fall</label>
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="answers" id="java-answer">
-        <label for="java-answer">If they are square, couldn't fit</label>
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="answers" id="python-answer">
-        <label for="python-answer">Are they circular?</label>
-      </label>
-    </div>
-    <br />
-    <p>You’ve been given an elephant. You can’t give it away or sell it. What would you do with the elephant?</p>
-    <div class="radio">
-      <label>
-        <input type="radio" name="answers" id="csharp-answer">
-        <label for="csharp-answer">Ride it</label>
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="answers" id="java-answer">
-        <label for="java-answer">Take it to the Zoo</label>
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="answers" id="python-answer">
-        <label for="python-answer">Take it to Madagascar</label>
-      </label>
-    </div>
-    <br />
-    <p>If you were a tree, what kind of tree would you be and why?</p>
-    <div class="radio">
-      <label>
-        <input type="radio" name="answers" id="csharp-answer">
-        <label for="csharp-answer">Probably Fir</label>
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="answers" id="java-answer">
-        <label for="java-answer">Maybe Cedar</label>
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" name="answers" id="python-answer">
-        <label for="python-answer">Definately Oak</label>
-      </label>
-    </div>
-    <button type="submit" class="btn">Submit</button>
-    <div id="Csharp">
+    <form name="survey" id="survey">
+      <div>
+        <p>How would you solve problems if you were from Mars?</p>
+        <p><input type="radio" name="question1" value="csharp"> Different place, different problems</p>
+        <p><input type="radio" name="question1" value="java"> Research</p>
+        <p><input type="radio" name="question1" value="python"> Practice coding</p>
+      </div>
+      <br />
+      <div>
+        <p>What do you think of garden gnomes?</p>
+        <p><input type="radio" name="question2" value="csharp"> I wouldn't be here</p>
+        <p><input type="radio" name="question2" value="java"> I wouldn't be talking to you</p>
+        <p><input type="radio" name="question2" value="python"> Why Sarcasm?</p>
+      </div>
+      <br />
+      <div>
+        <p>Why are manholes round?</p>
+        <p><input type="radio" name="question3" value="csharp"> Round can't fall</p>
+        <p><input type="radio" name="question3" value="java"> Take it to the Zoo</p>
+        <p><input type="radio" name="question3" value="python"> Take it to Madagascar</p>
+      </div>
+      <br />
+      <div>
+        <p>You’ve been given an elephant. You can’t give it away or sell it. What would you do with the elephant?</p>
+        <p><input type="radio" name="question4" value="csharp"> Ride it</p>
+        <p><input type="radio" name="question4" value="java"> Take it to the Zoo</p>
+        <p><input type="radio" name="question4" value="python"> Take it to Madagascar</p>
+      </div>
+      <br />
+      <div>
+        <p>If you were a tree, what kind of tree would you be and why?</p>
+        <p><input type="radio" name="question5" value="csharp"> Probably Fir</p>
+        <p><input type="radio" name="question5" value="java"> Maybe Cedar</p>
+        <p><input type="radio" name="question5" value="python"> Definately Oak</p>
+      </div>
+    </form>
+      <button type="submit" id="submit" onclick="tabulate()">Submit your answer</button>
+      <button type="reset" id="reset" onclick="resetAnswer()">Reset</button>
+      <div id="answer">Your result will show up here!</div>
+    
+      
+    
+      <div id="Csharp">
     <h5>Csharp</h5>
     <p>C# is a general-purpose, modern and object-oriented programming language pronounced as “C Sharp” or “C Hash”. It was developed by Microsoft led by Anders Hejlsberg and his team within the .NET initiative and was approved by the European Computer Manufacturers Association (ECMA) and International Standards Organization (ISO). C# is among the languages for Common Language Infrastructure and the current version of C# is version 7.2. C# is a lot similar to Java syntactically and is easy for users who have knowledge of C, C++, or Java.</p>
     </div>
