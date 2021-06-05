@@ -1,21 +1,14 @@
-function createQuestion() {
-  $("p").foreach(
-    (immediateQuestion, questionIndex) => {
-      const answers = [];
-      for (answerLetter in immediateQuestion.answers)
-    }
-  )
-}
+
 
 $(document).ready(function() {
   $("form#container").submit(function(event) {
     event.preventDefault();
-    const Q1 = toString($("#q1").val());
-    const Q2 = toString($("#q2").val());
-    const Q3 = toString($("#q3").val());
-    const Q4 = toString($("#q4").val());
-    const Q5 = toString($("#q5").val());
+    const questions = $("p").each(function() {
+      for (const i = 0; i < questions.length; i += 1) {
+        questions[i].style.display = "none"
     
+    const Q1 = toString($("#q1").val());
+        
     if (result === csharp) {
       $("#Csharp").show();
     } else if (result === java) {
@@ -23,6 +16,5 @@ $(document).ready(function() {
     } else if (result === python) {
       $("#python").show();
     }
-    $("#output").text(result);
   }) 
 })
