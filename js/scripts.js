@@ -33,7 +33,11 @@ function tabulate() {
   } else if (correctAnswer == q11 && q12 && q13 && q14 && q15) {
     document.getElementById("python").innerHTML;
   } else {
-    document.getElementById("result").innerHTML = "Sign up at Epicodus for Introduction to Programming";  
-  }  
+    document.getElementById("result").innerHTML = "Sign up at Epicodus for Introduction to Programming course";  
+  }
+  
+  // Reset 
+  document.getElementById("survey").reset();
 }
+
 
