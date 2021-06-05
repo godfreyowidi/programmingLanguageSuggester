@@ -11,45 +11,47 @@
   <title>Language Suggester</title>
 </head>
 <body>
-  <div class="container"></div>
+  <div class="container">
     <h1>Programming Language Suggester</h1>
     <br />
     <form name="survey" id="survey">
-      <div>
-        <p>How would you solve problems if you were from Mars?</p>
-        <p><input type="radio" name="question1" value="csharp"> Different place, different problems</p>
-        <p><input type="radio" name="question1" value="java"> Research</p>
-        <p><input type="radio" name="question1" value="python"> Practice coding</p>
-      </div>
-      <br />
-      <div>
-        <p>What do you think of garden gnomes?</p>
-        <p><input type="radio" name="question2" value="csharp"> I wouldn't be here</p>
-        <p><input type="radio" name="question2" value="java"> I wouldn't be talking to you</p>
-        <p><input type="radio" name="question2" value="python"> Why Sarcasm?</p>
-      </div>
-      <br />
-      <div>
-        <p>Why are manholes round?</p>
-        <p><input type="radio" name="question3" value="csharp"> Round can't fall</p>
-        <p><input type="radio" name="question3" value="java"> Squares can't fit</p>
-        <p><input type="radio" name="question3" value="python"> Aren't they circular</p>
-      </div>
-      <br />
-      <div>
-        <p>You’ve been given an elephant. You can’t give it away or sell it. What would you do with the elephant?</p>
-        <p><input type="radio" name="question4" value="csharp"> Ride it</p>
-        <p><input type="radio" name="question4" value="java"> Take it to the Zoo</p>
-        <p><input type="radio" name="question4" value="python"> Take it to Madagascar</p>
-      </div>
-      <br />
-      <div>
-        <p>If you were a tree, what kind of tree would you be and why?</p>
-        <p><input type="radio" name="question5" value="csharp"> Probably Fir</p>
-        <p><input type="radio" name="question5" value="java"> Maybe Cedar</p>
-        <p><input type="radio" name="question5" value="python"> Definately Oak</p>
-      </div>
-      <button type="submit" id="submit" onclick="tabulate()">Submit your answer</button>
+      <ul class="radio">
+        <div class="wideDisplay">
+          <p>1). How would you solve problems if you were from Mars?</p>
+          <p><input type="radio" name="question1" id="q1a" value="csharp"> Different place, different problems</p>
+          <p><input type="radio" name="question1" id="q1b" value="java"> Research</p>
+          <p><input type="radio" name="question1" id="q1c" value="python"> Practice coding</p>
+        </div>
+        <br />
+        <div class="wideDisplay">
+          <p>2). What do you think of garden gnomes?</p>
+          <p><input type="radio" name="question2" id="q2a" value="csharp"> I wouldn't be here</p>
+          <p><input type="radio" name="question2" id="q2b" value="java"> I wouldn't be talking to you</p>
+          <p><input type="radio" name="question2" id="q2c" value="python"> Why Sarcasm?</p>
+        </div>
+        <br />
+        <div class="wideDisplay">
+          <p>3). Why are manholes round?</p>
+          <p><input type="radio" name="question3" id="q3a" value="csharp"> Round can't fall</p>
+          <p><input type="radio" name="question3" id="q3b" value="java"> Squares can't fit</p>
+          <p><input type="radio" name="question3" id="q3c" value="python"> Aren't they circular</p>
+        </div>
+        <br />
+        <div class="wideDisplay">
+          <p>4). You’ve been given an elephant. You can’t give it away or sell it. What would you do with the elephant?</p>
+          <p><input type="radio" name="question4" id="q4a" value="csharp"> Ride it</p>
+          <p><input type="radio" name="question4" id="q4b" value="java"> Take it to the Zoo</p>
+          <p><input type="radio" name="question4" id="q4c" value="python"> Take it to Madagascar</p>
+        </div>
+        <br />
+        <div class="wideDisplay">
+          <p>5). If you were a tree, what kind of tree would you be and why?</p>
+          <p><input type="radio" name="question5" id="q5a" value="csharp"> Probably Fir</p>
+          <p><input type="radio" name="question5" id="q5b" value="java"> Maybe Cedar</p>
+          <p><input type="radio" name="question5" id="q5c" value="python"> Definately Oak</p>
+        </div>
+        <button type="submit" id="submit" onclick="tabulate()">Submit your answer</button>
+      </ul>
     </form>
     <p id="outcome"></p>
         

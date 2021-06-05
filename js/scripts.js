@@ -1,13 +1,35 @@
-function tabulate() {
-  const result = 0;
-  const q1 = document.survey.question1.value;
-  const q2 = document.survey.question2.value;
-  const q3 = document.survey.question3.value;
-  const q4 = document.survey.question4.value;
-  const q5 = document.survey.question5.value;
+// Function to check correct answers and display them
+function tabulateResult() {
 
-  const outcome = $(document).("#outcome");
-  const survey = document.$("#survey");
+  // count correct answers
+  const correctAnswers = 0;
+
+  // correct input to display csharp
+  const q1 = document.getElementById("q1a").value;
+  const q2 = document.getElementById("q2a").value;
+  const q3 = document.getElementById("q3a").value;
+  const q4 = document.getElementById("q4a").value;
+  const q5 = document.getElementById("q5a").value;
+
+  // correct input to display java
+  const q5 = document.getElementById("q1b").value;
+  const q6 = document.getElementById("q2b").value;
+  const q7 = document.getElementById("q3b").value;
+  const q8 = document.getElementById("q4b").value;
+  const q9 = document.getElementById("q5b").value;
+
+  // correct input to display python
+  const q10 = document.getElementById("q1c").value;
+  const q12 = document.getElementById("q2c").value;
+  const q13 = document.getElementById("q3c").value;
+  const q14 = document.getElementById("q4c").value;
+  const q15 = document.getElementById("q5c").value;
+
+
+}
+$(document).ready(function(){
+  $("form#survey").submit(function(event) {
+    event.preventDefault();
 
   if (q1 == "Different place, different problems") {result ++}
   if (q2 == "I wouldn't be talking to you") {result ++}
@@ -15,10 +37,3 @@ function tabulate() {
   if (q4 == "Take it to Madagascar") {result ++}
   if (q5 == "Maybe Cedar") {result ++}
   
-  $("#survey").hide();
-  if (result <= 3) {
-    result.text("Your result is ${result}. Please try again.");
-  } else {
-    result.text("Your result is ${result}. Good work.");
-  }
-}
