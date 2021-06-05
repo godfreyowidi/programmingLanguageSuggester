@@ -1,42 +1,52 @@
-# _Programming Language Suggester_
+# Programming Language Suggester
 
-#### _Provides the user with information on programming languages after taking an IQ test of questiions_
+#### Provides the user with information on programming languages after taking an IQ test of questiions
 
 #### By _**Godfrey Owidi**_
 
 ## Technologies Used
 
-* _HTML5_
-* _CSS_
-* _Javascript_
-* _Bootstrap_
-* _jQuery_
-* _Git_
-* _Markdown_
+* HTML5
+* CSS
+* Javascript
+* Bootstrap
+* jQuery
+* Git
+* Markdown
 
 ## Description
 
-_The tool provides beginners and interest groups of developers opportunity to gauge their ability to learn and excel in  a specific programming language by taking a series of IQ level testing question. The user gets the chance to view more information about the language and makes a decision_
+The tool provides beginners and interest groups of developers opportunity to gauge their ability to learn and excel in  a specific programming language by taking a series of IQ level testing question. The user gets the chance to view more information about the language and makes a decision
 
-## Setup/Installation Requirements
+## Setup Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* Computer(PC or MacOS
+* Browser
+* Internet Connection
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+## Installation
+
+1. Clone the project repository from _[Github](https://github.com/godfreyowidi/programmingLanguageSuggester)_
+
+2. Identify the directory programmingLanguageSuggester and navigate to it using the terminal command ```cd programmingLanguageSuggester``` 
+
+3. While inside the working directroy (programmingLanguageSuggester), open the project on editor preferably VS code using the terminal command ```code .```
+
+4. Identify index.html from the list of items display on the editor.
+
+5. Right click on the file and choose to open with browser.
+
+6. You can now emjoy viewing and reading through the page.
+
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* No bug.
 
 ## License
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Contact Information
 
-_{Add your contact information here.}_
+<hello@godfrey.com>
