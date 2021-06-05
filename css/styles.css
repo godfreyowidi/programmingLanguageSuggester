@@ -1,3 +1,16 @@
 #csharp, #java, #python {
   display: none;
 }
+
+body {
+  background-color: burlywood;
+}
+
+h1 {
+  font-family: fantasy;
+}
+
+form {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+}
