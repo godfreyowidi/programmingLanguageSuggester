@@ -1,4 +1,34 @@
-// Function to check correct answers and display them
+$(document).ready(function () {
+  $("input:radio[name='question']").click(function () {
+      if ($("#1a, #1b, #1c, #1d, #1e").is(":checked")) {
+          $("#csharp").show();
+      } else {
+          $("#csharp").hide();
+      };    
+  });
+});
+
+$(document).ready(function () {
+  $("input:radio[name='question']").click(function () {
+      if ($("#2a, #2b, #2c, #2d, #2e").is(":checked")) {
+          $("#java").show();
+      } else {
+          $("#java").hide();
+      }
+  });
+});
+
+$(document).ready(function () {
+  $("input:radio[name='question']").click(function () {
+      if ($("#3a, #3b, #3c, #3d, #3e").is(":checked")) {
+          $("#python").show();
+      } else {
+          $("#python").hide();
+      }
+  });
+});
+
+/*// Function to check correct answers and display them
 function tabulate() {
 
   // count correct answers
@@ -38,6 +68,4 @@ function tabulate() {
   
   // Reset 
   document.getElementById("survey").reset();
-}
-
-
+}*/
