@@ -1,3 +1,13 @@
 #csharp, #java, #python {
   display: none;
 }
+
+.fieldElements {
+  margin: auto;
+  width: 50%;
+}
+
+.result {
+  text-align: center;
+  width: 1050px;
+}
