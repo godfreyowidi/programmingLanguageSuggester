@@ -76,4 +76,20 @@ $(document).ready(function() {
       return 3;
     }    
   }
+
+// outcome handler
+function outcome(totalScore) {
+  if (totalScore <= 5) {
+    $("#csharp").show();   
+  }
+  
+  else if (totalScore > 5 && totalScore <=  10) {
+    $("#java").show();  
+  }
+  
+  else if (totalScore > 10) {
+    $("#python").show();
+  } 
+}
+
 });
