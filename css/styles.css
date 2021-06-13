@@ -1,17 +1,3 @@
 #csharp, #java, #python {
   display: none;
 }
-
-body {
-  background-color: rgb(221, 206, 187);
-  background-image: linear-gradient(#cac531, #f3f9a7);
-}
-
-h1 {
-  font-family: fantasy;
-}
-
-form {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: black;
-}
