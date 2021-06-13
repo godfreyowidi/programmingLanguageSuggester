@@ -11,45 +11,21 @@
   <title>Language Suggester</title>
 </head>
 <body>
-  <div class="container">
-    <h1>Programming Language Suggester</h1>
-    <br />
-    <form name="survey" id="survey">
-      <ul class="radio">
-        <div>
-          <p>1). How would you solve problems if you were from Mars?</p>
-          <p><input type="radio" name="question" id="1a" value="csharp"> Different place, different problems</p>
-          <p><input type="radio" name="question" id="2a" value="java"> Research</p>
-          <p><input type="radio" name="question" id="3a" value="python"> Practice coding</p>
-        </div>
-        <br />
-        <div>
-          <p>2). What do you think of garden gnomes?</p>
-          <p><input type="radio" name="question" id="1b" value="csharp"> I wouldn't be here</p>
-          <p><input type="radio" name="question" id="2b" value="java"> I wouldn't be talking to you</p>
-          <p><input type="radio" name="question" id="3b" value="python"> Why Sarcasm?</p>
-        </div>
-        <br />
-        <div>
-          <p>3). Why are manholes round?</p>
-          <p><input type="radio" name="question" id="1c" value="csharp"> Round can't fall</p>
-          <p><input type="radio" name="question" id="2c" value="java"> Squares can't fit</p>
-          <p><input type="radio" name="question" id="3c" value="python"> Aren't they circular</p>
-        </div>
-        <br />
-        <div>
-          <p>4). You’ve been given an elephant. You can’t give it away or sell it. What would you do with the elephant?</p>
-          <p><input type="radio" name="question" id="1d" value="csharp"> Ride it</p>
-          <p><input type="radio" name="question" id="2d" value="java"> Take it to the Zoo</p>
-          <p><input type="radio" name="question" id="3d" value="python"> Take it to Madagascar</p>
-        </div>
-        <br />
-        <div>
-          <p>5). If you were a tree, what kind of tree would you be and why?</p>
-          <p><input type="radio" name="question" id="1e" value="csharp"> Probably Fir</p>
-          <p><input type="radio" name="question" id="2e" value="java"> Maybe Cedar</p>
-          <p><input type="radio" name="question" id="3e" value="python"> Definately Oak</p>
-        </div>
+  <div class="fieldElements">
+    <h1 id="heading">Which programming language suits you?</h1><br >
+      <h5>Let's start with your Name</h5>
+      <input id="name" placeholder="Enter Your Name Here">
+      <h5> How would you solve problems if you were from Mars?</h5>
+      <input type="text" id="question1" placeholder="Different place, different problems, Research, Practice coding">
+      <h5> What do you think of garden gnomes??</h5>
+      <input type="text" id="question2" placeholder="I wouldn't be here, I wouldn't be talking to you, Why Sarcasm?">
+      <h5>Why are manholes round?</h5>
+      <input type="text" id="question3" placeholder="Round can't fall, Squares can't fit, Aren't they circular">
+      <h5>You’ve been given an elephant. You can’t give it away or sell it. What would you do with the elephant?</h5>
+      <input type="text" id="question4" placeholder="Ride it, Take it to the Zoo, Take it to Madagascar">
+      <h5>If you were a tree, what kind of tree would you be and why?</h5>
+      <input type="text" id="question5" placeholder="Probably Fir, Maybe Cedar, Definately Oak">
+  </div>
         <button type="submit">Submit</button>
         <!-- <button type="submit" id="submit" onclick="tabulate()">Submit your answer</button> -->
       </ul>
